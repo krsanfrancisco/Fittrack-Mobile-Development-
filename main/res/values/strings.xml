@@ -1,0 +1,17 @@
+<resources>
+    <!-- place holder since wala pang database -->
+    <string name="app_name">fittrack</string>
+    <string-array name="fitness_goals">
+        <item>Fitness Goal</item>
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Maintenance</item>
+    </string-array>
+
+    <string-array name="activity_levels">
+        <item>Activity Level</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+</resources>
