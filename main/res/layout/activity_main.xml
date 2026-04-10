@@ -1,3 +1,4 @@
+<!-- April 3 - FIXED: added logout without removing anything -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
@@ -56,41 +57,55 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
+        <View android:layout_height="10dp" android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:background="@drawable/box"
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Planned Workouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/workoutList"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+
+        <Button
+            android:text="Logout"
+            android:onClick="logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:paddingTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:text="Home"
-            android:onClick="goHome"
-            android:gravity="center"
+        <TextView android:text="Home" android:onClick="goHome"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:text="Tracker"
-            android:onClick="goTracker"
-            android:gravity="center"
+        <TextView android:text="Tracker" android:onClick="goTracker"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:text="Billing"
-            android:onClick="goBilling"
-            android:gravity="center"
+        <TextView android:text="Billing" android:onClick="goBilling"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:text="More"
-            android:onClick="goMore"
-            android:gravity="center"
+        <TextView android:text="More" android:onClick="goMore"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
